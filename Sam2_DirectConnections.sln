@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sam2_DirectConnections", "launchers\Sam2_DirectConnections.vcxproj", "{EB2796C0-6682-402B-BC5C-8C17CDC95E58}"
+	ProjectSection(ProjectDependencies) = postProject
+		{09C45355-D6AD-40FF-83C5-A3BBF385F96D} = {09C45355-D6AD-40FF-83C5-A3BBF385F96D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DedicatedServer_DirectConnections", "launchers\DedicatedServer_DirectConnections.vcxproj", "{8F3D4E6A-C1B7-4E69-B63D-4E055898767A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{09C45355-D6AD-40FF-83C5-A3BBF385F96D} = {09C45355-D6AD-40FF-83C5-A3BBF385F96D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectConnections", "dll\DirectConnections.vcxproj", "{09C45355-D6AD-40FF-83C5-A3BBF385F96D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Launchers", "Launchers", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB2796C0-6682-402B-BC5C-8C17CDC95E58}.Debug|x86.ActiveCfg = Debug|Win32
+		{EB2796C0-6682-402B-BC5C-8C17CDC95E58}.Debug|x86.Build.0 = Debug|Win32
+		{EB2796C0-6682-402B-BC5C-8C17CDC95E58}.Release|x86.ActiveCfg = Release|Win32
+		{EB2796C0-6682-402B-BC5C-8C17CDC95E58}.Release|x86.Build.0 = Release|Win32
+		{8F3D4E6A-C1B7-4E69-B63D-4E055898767A}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F3D4E6A-C1B7-4E69-B63D-4E055898767A}.Debug|x86.Build.0 = Debug|Win32
+		{8F3D4E6A-C1B7-4E69-B63D-4E055898767A}.Release|x86.ActiveCfg = Release|Win32
+		{8F3D4E6A-C1B7-4E69-B63D-4E055898767A}.Release|x86.Build.0 = Release|Win32
+		{09C45355-D6AD-40FF-83C5-A3BBF385F96D}.Debug|x86.ActiveCfg = Debug|Win32
+		{09C45355-D6AD-40FF-83C5-A3BBF385F96D}.Debug|x86.Build.0 = Debug|Win32
+		{09C45355-D6AD-40FF-83C5-A3BBF385F96D}.Release|x86.ActiveCfg = Release|Win32
+		{09C45355-D6AD-40FF-83C5-A3BBF385F96D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB2796C0-6682-402B-BC5C-8C17CDC95E58} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8F3D4E6A-C1B7-4E69-B63D-4E055898767A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F233582F-C057-42EE-A34C-76E110E90AD5}
+	EndGlobalSection
+EndGlobal

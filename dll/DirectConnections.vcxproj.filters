@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DirectConnections.cpp" />
+    <ClCompile Include="thirdparty\Zydis.c">
+      <Filter>thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\safetyhook.cpp">
+      <Filter>thirdparty</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{90d2952d-27e6-48fc-a237-c9d861446c70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\steamworks">
+      <UniqueIdentifier>{eb1650a2-d109-4b5c-b57c-bfb7a834aa25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\steamworks\steam">
+      <UniqueIdentifier>{8f195cab-9b29-42c3-88a6-ba983af97023}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="thirdparty\safetyhook.hpp">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\Zydis.h">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamgameserver.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamgameserverstats.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamhttp.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteammasterserverupdater.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteammatchmaking.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamnetworking.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamps3overlayrenderer.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamremotestorage.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamscreenshots.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamuser.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamuserstats.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamutils.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\matchmakingtypes.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\steam_api.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\steam_gameserver.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\steamclientpublic.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\steamencryptedappticket.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\steamhttpenums.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\steamps3params.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\steamtypes.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamapps.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamappticket.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamclient.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamfriends.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\steamworks\steam\isteamgamecoordinator.h">
+      <Filter>thirdparty\steamworks\steam</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

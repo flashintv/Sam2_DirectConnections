@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Launcher_DirectConnections.cpp" />
+    <ClCompile Include="thirdparty\md5.c">
+      <Filter>thirdparty</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="thirdparty\md5.h">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\build\DirectConnections.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DedicatedServer_DirectConnections.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{aa05cdbd-2774-4cf9-b1d5-ba7c845a00f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{09C45355-D6AD-40FF-83C5-A3BBF385F96D}</ProjectGuid>
+    <RootNamespace>DirectConnections</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)build\</OutDir>
+    <LibraryPath>$(SolutionDir)lib;thirdparty\steamworks;$(LibraryPath)</LibraryPath>
+    <IncludePath>thirdparty;thirdparty\steamworks;thirdparty\steamworks\steam;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)build\</OutDir>
+    <LibraryPath>$(SolutionDir)lib;thirdparty\steamworks;$(LibraryPath)</LibraryPath>
+    <IncludePath>thirdparty;thirdparty\steamworks;thirdparty\steamworks\steam;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile />
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Core.lib;Engine.lib;Sam2Game.lib;steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Core.lib;Engine.lib;Sam2Game.lib;steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DirectConnections.cpp" />
+    <ClCompile Include="thirdparty\safetyhook.cpp" />
+    <ClCompile Include="thirdparty\Zydis.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="thirdparty\safetyhook.hpp" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamapps.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamappticket.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamclient.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamfriends.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamgamecoordinator.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamgameserver.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamgameserverstats.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamhttp.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteammasterserverupdater.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteammatchmaking.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamnetworking.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamps3overlayrenderer.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamremotestorage.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamscreenshots.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamuser.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamuserstats.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\isteamutils.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\matchmakingtypes.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\steamclientpublic.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\steamencryptedappticket.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\steamhttpenums.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\steamps3params.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\steamtypes.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\steam_api.h" />
+    <ClInclude Include="thirdparty\steamworks\steam\steam_gameserver.h" />
+    <ClInclude Include="thirdparty\Zydis.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
